@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* =========================
    🎨 COLORES – IDENTIDAD
    ========================= */
@@ -53,7 +54,7 @@
   width: 100%;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .sidebar__logo::after {
@@ -198,7 +199,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* Overlay elegante */
@@ -309,6 +310,7 @@
   color: #7A1F2B;
   position: relative;
 }
+
 .services__title::after {
   content: "";
   display: block;
@@ -349,21 +351,25 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
+
 .service-card i {
   font-size: 2.1rem;
   color: #7A1F2B;
   margin-bottom: 1rem;
 }
+
 .service-card h4 {
   font-size: 0.95rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
   color: #2B2B2B;
 }
+
 .service-card p {
   font-size: 0.85rem;
   color: #6F6F6F;
@@ -376,14 +382,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 600px) {
   .services {
     padding: 3rem 1.2rem;
   }
+
   .services__grid {
     grid-template-columns: 1fr;
   }
 }
+
 /* CONTENEDOR */
 .contact {
   padding: 3rem 2rem 3.5rem;
@@ -472,13 +481,16 @@
   .contact {
     padding: 2.5rem 1.2rem;
   }
+
   .contact__item {
     padding: 1rem 1.2rem;
   }
+
   .contact-map {
     height: 300px;
   }
 }
+
 .gallery {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -503,15 +515,17 @@
   /* Overlay elegante */
   /* Icono lupa */
 }
+
 .gallery__card img,
 .gallery__card video {
   width: 100%;
   height: 320px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.45s ease;
 }
+
 .gallery__card::after {
   content: "";
   position: absolute;
@@ -520,6 +534,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .gallery__card::before {
   content: "\f002";
   font-family: "Font Awesome 6 Free";
@@ -534,17 +549,21 @@
   z-index: 2;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .gallery__card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
+
 .gallery__card:hover img,
 .gallery__card:hover video {
   transform: scale(1.07);
 }
+
 .gallery__card:hover::after {
   opacity: 1;
 }
+
 .gallery__card:hover::before {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
@@ -555,11 +574,13 @@
   .gallery {
     padding: 2.5rem 1.2rem;
   }
+
   .gallery__card img,
   .gallery__card video {
     height: 260px;
   }
 }
+
 .page-hero {
   position: relative;
   height: 260px;
@@ -575,6 +596,7 @@
   background: url("../fondo_hero.png") center/cover no-repeat;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
+
 .page-hero::before {
   content: "";
   position: absolute;
@@ -582,11 +604,13 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(80, 15, 25, 0.65));
   z-index: 1;
 }
+
 .page-hero__content {
   position: relative;
   z-index: 2;
   padding: 0 1.5rem;
 }
+
 .page-hero__content h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.6rem;
@@ -594,6 +618,7 @@
   margin-bottom: 0.6rem;
   text-transform: uppercase;
 }
+
 .page-hero__content p {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -606,10 +631,67 @@
     height: 200px;
     border-radius: 16px;
   }
+
   .page-hero__content h1 {
     font-size: 2rem;
   }
+
   .page-hero__content p {
     font-size: 0.9rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* =========================
+   📱 NAVBAR MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    z-index: 1000;
+  }
+
+  .sidebar__logo {
+    margin-bottom: 0;
+    min-height: auto;
+  }
+
+  .sidebar__logo::after {
+    display: none;
+  }
+
+  .sidebar__logo-img {
+    max-width: 110px;
+  }
+
+  .sidebar__nav {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .sidebar__nav .nav-item {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 90px;
+    /* espacio para navbar */
+  }
+
+  .footer {
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
