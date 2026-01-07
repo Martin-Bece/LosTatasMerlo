@@ -657,7 +657,7 @@
     left: 0;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0.6rem 1rem;
     z-index: 1000;
   }
@@ -738,7 +738,7 @@
    🍔 MENU HAMBURGUESA MOBILE
    ========================= */
 .sidebar__toggle {
-  display: none;
+  display: block;
   background: none;
   border: none;
   font-size: 1.8rem;
