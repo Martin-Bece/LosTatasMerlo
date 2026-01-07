@@ -648,9 +648,10 @@
    ========================= */
 @media (max-width: 768px) {
 
+  /* ====== NAVBAR ====== */
   .sidebar {
     width: 100%;
-    height: auto;
+    height: 72px;
     position: fixed;
     top: 0;
     left: 0;
@@ -684,14 +685,90 @@
     padding: 0.3rem 0.6rem;
   }
 
+  /* ====== LAYOUT ====== */
+  body {
+    overflow-x: hidden;
+  }
+
   .main-content {
     margin-left: 0;
-    padding-top: 90px;
-    /* espacio para navbar */
+    width: 100%;
+    max-width: 100%;
+    padding-top: 72px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer {
     margin-left: 0;
     flex-direction: column;
+  }
+
+  /* ====== HERO ====== */
+  .hero-carousel {
+    height: 55vh;
+  }
+
+  .page-hero {
+    margin-top: 0;
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  .page-hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero__content p {
+    font-size: 0.9rem;
+  }
+
+  /* ====== WELCOME ====== */
+  .welcome {
+    padding: 3rem 1.2rem;
+  }
+
+  .welcome__features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* =========================
+   🍔 MENU HAMBURGUESA MOBILE
+   ========================= */
+.sidebar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #7A1F2B;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .sidebar__toggle {
+    display: block;
+  }
+
+  .sidebar__nav {
+    position: absolute;
+    top: 72px; /* misma altura del navbar */
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+
+    /* oculto por defecto */
+    display: none;
+  }
+
+  .sidebar__nav.active {
+    display: flex;
   }
 }
