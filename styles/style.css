@@ -751,6 +751,9 @@
 
   .sidebar__toggle {
     display: block;
+    margin-right: 0.6rem; 
+    padding: 0.2rem 0.4rem; 
+    line-height: 1;
   }
 
   .sidebar__nav {
