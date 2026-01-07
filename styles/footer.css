@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* =========================
+   🎨 COLORES – IDENTIDAD
+   ========================= */
+/* =========================
+   🧱 FONDOS
+   ========================= */
+/* =========================
+   🖋 TEXTO
+   ========================= */
+/* =========================
+   🔤 TIPOGRAFÍAS
+   ========================= */
+/* =========================
+   🦶 FOOTER
+   ========================= */
+.footer {
+  display: flex;
+  margin-left: 180px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* IZQUIERDA */
+.footer__left {
+  flex: 1;
+  background-color: #F1ECE8;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.footer__title {
+  font-size: 0.95rem;
+  color: #6F6F6F;
+}
+
+/* Redes */
+.footer__socials {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.footer__socials a {
+  color: #7A1F2B;
+  font-size: 1.2rem;
+  transition: transform 0.25s ease;
+}
+
+.footer__socials a:hover {
+  transform: translateY(-3px);
+}
+
+/* DERECHA */
+.footer__right {
+  flex: 1;
+  background-color: #E6DED8;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #2B2B2B;
+}
+
+.footer__contact-item i {
+  color: #7A1F2B;
+  font-size: 1rem;
+}
+
+.footer__gps {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #7A1F2B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer__gps:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=footer.css.map */

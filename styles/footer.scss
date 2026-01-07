@@ -1,0 +1,79 @@
+@use "variables" as *;
+
+.footer {
+  display: flex;
+  margin-left: 180px;
+  font-family: $font-primary;
+}
+
+/* IZQUIERDA */
+.footer__left {
+  flex: 1;
+  background-color: $footer-left-bg;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.footer__title {
+  font-size: 0.95rem;
+  color: $color-text-muted;
+}
+
+/* Redes */
+.footer__socials {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.footer__socials a {
+  color: $color-primary;
+  font-size: 1.2rem;
+  transition: transform 0.25s ease;
+}
+
+.footer__socials a:hover {
+  transform: translateY(-3px);
+}
+
+/* DERECHA */
+.footer__right {
+  flex: 1;
+  background-color: $footer-right-bg;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: $color-text;
+}
+
+.footer__contact-item i {
+  color: $color-primary;
+  font-size: 1rem;
+}
+
+.footer__gps {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer__gps:hover {
+  text-decoration: underline;
+}

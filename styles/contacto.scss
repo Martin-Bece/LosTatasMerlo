@@ -1,0 +1,99 @@
+@use "variables" as *;
+
+/* CONTENEDOR */
+.contact {
+  padding: 3rem 2rem 3.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TEXTO INTRO */
+.contact__intro {
+  font-size: 0.95rem;
+  color: $color-text-muted;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+/* INFO */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+/* ITEM */
+.contact__item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+/* ICONO */
+.contact__item i {
+  color: $color-primary; // bordó
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+}
+
+/* LINKS */
+.contact__item a {
+  color: $color-text;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact__item a:hover {
+  color: $color-primary;
+  text-decoration: underline;
+}
+
+/* GPS */
+.contact__gps {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: $color-primary;
+  font-weight: 500;
+}
+
+/* MAPA */
+.contact-map {
+  margin: 3.5rem auto 0;
+  max-width: 1100px;
+  height: 360px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .contact__item {
+    padding: 1rem 1.2rem;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+}

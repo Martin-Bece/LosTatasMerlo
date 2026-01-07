@@ -1,0 +1,84 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.sidebar {
+  @include panel-base;
+  font-family: $font-primary;
+
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  padding: 1.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: $color-surface;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Links generales */
+.sidebar a {
+  color: $color-text;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* LOGO */
+.sidebar__logo {
+  margin-bottom: 3.2rem;
+  min-height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sidebar__logo-img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sidebar__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: rgba($color-primary, 0.25);
+}
+
+/* NAV */
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.sidebar__nav .nav-item {
+  padding: 0.35rem 0.9rem;
+  border-radius: 18px;
+  font-size: 0.85rem;
+}
+
+.sidebar__nav .nav-item:hover {
+  background-color: rgba($color-primary, 0.08);
+  color: $color-primary;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 180px;
+  padding: 2rem;
+  background-color: $color-bg;
+  min-height: 100vh;
+}

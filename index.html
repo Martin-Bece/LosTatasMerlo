@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Los Tatas</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="/LosTatasMerlo/styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- SIDEBAR / NAVBAR -->
+  <aside class="sidebar">
+    <div class="sidebar__logo">
+      <a href="/LosTatasMerlo/index.html">
+        <img src="/LosTatasMerlo/images/logo_LT.png" alt="Cabañas Los Tatas" class="sidebar__logo-img" />
+      </a>
+    </div>
+
+    <nav class="sidebar__nav">
+      <a href="/LosTatasMerlo/index.html" class="nav-item">Inicio</a>
+      <a href="/LosTatasMerlo/servicios.html" class="nav-item">Servicios</a>
+      <a href="/LosTatasMerlo/galeria.html" class="nav-item">Galería</a>
+      <a href="/LosTatasMerlo/contacto.html" class="nav-item">Contacto</a>
+    </nav>
+  </aside>
+
+  <!-- CONTENIDO PRINCIPAL (placeholder) -->
+  <main class="main-content">
+    <section class="hero-carousel">
+      <div class="carousel">
+        <div class="carousel__track">
+          <div class="carousel__slide active">
+            <img src="/LosTatasMerlo/images/cabana1.jpeg" alt="Cabañas en Merlo">
+          </div>
+          <div class="carousel__slide">
+            <img src="/LosTatasMerlo/images/cabana2.jpeg" alt="Vista exterior de la cabaña">
+          </div>
+          <div class="carousel__slide">
+            <img src="/LosTatasMerlo/images/cabana3.jpeg" alt="Vista a las sierras">
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel__btn prev">&#10094;</button>
+        <button class="carousel__btn next">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="welcome">
+      <h2 class="welcome__title">BIENVENIDOS A CABAÑAS LOS TATAS</h2>
+
+      <p class="welcome__text">
+        Las Cabañas Los Tatas son un espacio pensado para descansar y desconectarse, rodeadas de la tranquilidad de la
+        Villa de Merlo.
+        Un lugar ideal para disfrutar del microclima serrano, la naturaleza y el confort necesario para unas vacaciones
+        inolvidables.
+      </p>
+
+      <div class="welcome__features">
+        <div class="feature">
+          <i class="fa-solid fa-mountain-sun"></i>
+          <h3>Entorno natural</h3>
+          <p>Microclima serrano y vistas incomparables</p>
+        </div>
+
+        <div class="feature">
+          <i class="fa-solid fa-wifi"></i>
+          <h3>Wi-Fi</h3>
+          <p>Ofrecemos Wi-Fi gratuito</p>
+        </div>
+
+        <div class="feature">
+          <i class="fa-solid fa-car"></i>
+          <h4>Estacionamiento</h4>
+          <p>Estacionamiento privado dentro del predio para mayor comodidad.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__left">
+      <p class="footer__title">Seguinos también en</p>
+
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/lostatasmerlo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61585910139016" target="_blank"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__right">
+      <div class="footer__contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+54 9 2665 28-2702</span>
+      </div>
+
+      <div class="footer__contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>lostatasmerlo@gmail.com</span>
+      </div>
+
+      <div class="footer__contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Calle Las Vertientes 1465 - Merlo, San Luis <br>
+          Entre José A Mercau y La Capilla <br>
+          A metros de Avenida del Sol <br>
+          <a href="https://maps.app.goo.gl/g5eZLEpnffx7FoXv7" target="_blank" class="footer__gps">GPS</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/LosTatasMerlo/scripts/carousel.js"></script>
+
+</body>
+
+</html>

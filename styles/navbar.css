@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* =========================
+   🎨 COLORES – IDENTIDAD
+   ========================= */
+/* =========================
+   🧱 FONDOS
+   ========================= */
+/* =========================
+   🖋 TEXTO
+   ========================= */
+/* =========================
+   🔤 TIPOGRAFÍAS
+   ========================= */
+/* =========================
+   🦶 FOOTER
+   ========================= */
+.sidebar {
+  background-color: #7A1F2B;
+  color: #2B2B2B;
+  font-family: "Poppins", sans-serif;
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Links generales */
+.sidebar a {
+  color: #2B2B2B;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* LOGO */
+.sidebar__logo {
+  margin-bottom: 3.2rem;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sidebar__logo-img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.sidebar__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: rgba(122, 31, 43, 0.25);
+}
+
+/* NAV */
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.sidebar__nav .nav-item {
+  padding: 0.35rem 0.9rem;
+  border-radius: 18px;
+  font-size: 0.85rem;
+}
+
+.sidebar__nav .nav-item:hover {
+  background-color: rgba(122, 31, 43, 0.08);
+  color: #7A1F2B;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 180px;
+  padding: 2rem;
+  background-color: #FAFAF8;
+  min-height: 100vh;
+}/*# sourceMappingURL=navbar.css.map */
